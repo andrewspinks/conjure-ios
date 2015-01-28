@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A127887D1A789D4000DE6606 /* HelloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127887C1A789D4000DE6606 /* HelloClient.swift */; };
+		A12788811A78A02900DE6606 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16291941A6A557F0045F4DF /* Alamofire.framework */; };
 		A13545DB1A6A31C0003E867A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13545DA1A6A31C0003E867A /* AppDelegate.swift */; };
 		A13545DD1A6A31C0003E867A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13545DC1A6A31C0003E867A /* ViewController.swift */; };
 		A13545E01A6A31C0003E867A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13545DE1A6A31C0003E867A /* Main.storyboard */; };
 		A13545E21A6A31C0003E867A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13545E11A6A31C0003E867A /* Images.xcassets */; };
 		A13545E51A6A31C0003E867A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13545E31A6A31C0003E867A /* LaunchScreen.xib */; };
 		A13545F11A6A31C0003E867A /* ConjureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13545F01A6A31C0003E867A /* ConjureTests.swift */; };
+		A16291961A6A557F0045F4DF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16291941A6A557F0045F4DF /* Alamofire.framework */; };
+		A162919A1A6A55A80045F4DF /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16291971A6A55A80045F4DF /* PactConsumerSwift.framework */; };
+		A162919B1A6A55A80045F4DF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16291981A6A55A80045F4DF /* Quick.framework */; };
+		A162919C1A6A55A80045F4DF /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16291991A6A55A80045F4DF /* Nimble.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A127887C1A789D4000DE6606 /* HelloClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloClient.swift; sourceTree = "<group>"; };
 		A13545D51A6A31C0003E867A /* Conjure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conjure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13545D91A6A31C0003E867A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A13545DA1A6A31C0003E867A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +43,11 @@
 		A13545EA1A6A31C0003E867A /* ConjureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConjureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13545EF1A6A31C0003E867A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A13545F01A6A31C0003E867A /* ConjureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConjureTests.swift; sourceTree = "<group>"; };
+		A16291931A6A557F0045F4DF /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		A16291941A6A557F0045F4DF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A16291971A6A55A80045F4DF /* PactConsumerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumerSwift.framework; path = Carthage/Build/iOS/PactConsumerSwift.framework; sourceTree = "<group>"; };
+		A16291981A6A55A80045F4DF /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		A16291991A6A55A80045F4DF /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16291961A6A557F0045F4DF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12788811A78A02900DE6606 /* Alamofire.framework in Frameworks */,
+				A162919A1A6A55A80045F4DF /* PactConsumerSwift.framework in Frameworks */,
+				A162919B1A6A55A80045F4DF /* Quick.framework in Frameworks */,
+				A162919C1A6A55A80045F4DF /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +76,11 @@
 		A13545CC1A6A31C0003E867A = {
 			isa = PBXGroup;
 			children = (
+				A16291971A6A55A80045F4DF /* PactConsumerSwift.framework */,
+				A16291981A6A55A80045F4DF /* Quick.framework */,
+				A16291991A6A55A80045F4DF /* Nimble.framework */,
+				A16291931A6A557F0045F4DF /* BrightFutures.framework */,
+				A16291941A6A557F0045F4DF /* Alamofire.framework */,
 				A13545D71A6A31C0003E867A /* Conjure */,
 				A13545ED1A6A31C0003E867A /* ConjureTests */,
 				A13545D61A6A31C0003E867A /* Products */,
@@ -83,6 +105,7 @@
 				A13545E11A6A31C0003E867A /* Images.xcassets */,
 				A13545E31A6A31C0003E867A /* LaunchScreen.xib */,
 				A13545D81A6A31C0003E867A /* Supporting Files */,
+				A127887C1A789D4000DE6606 /* HelloClient.swift */,
 			);
 			path = Conjure;
 			sourceTree = "<group>";
@@ -122,6 +145,7 @@
 				A13545D11A6A31C0003E867A /* Sources */,
 				A13545D21A6A31C0003E867A /* Frameworks */,
 				A13545D31A6A31C0003E867A /* Resources */,
+				A127887F1A789F9C00DE6606 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -139,6 +163,7 @@
 				A13545E61A6A31C0003E867A /* Sources */,
 				A13545E71A6A31C0003E867A /* Frameworks */,
 				A13545E81A6A31C0003E867A /* Resources */,
+				A12788801A789FE700DE6606 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -207,12 +232,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A127887F1A789F9C00DE6606 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=/usr/local/bin:/opt/boxen/homebrew/bin:$PATH\ncarthage copy-frameworks";
+		};
+		A12788801A789FE700DE6606 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PactConsumerSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=/usr/local/bin:/opt/boxen/homebrew/bin:$PATH\ncarthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A13545D11A6A31C0003E867A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A13545DD1A6A31C0003E867A /* ViewController.swift in Sources */,
+				A127887D1A789D4000DE6606 /* HelloClient.swift in Sources */,
 				A13545DB1A6A31C0003E867A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +398,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Conjure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +412,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Conjure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +429,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -380,6 +449,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ConjureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -407,6 +477,7 @@
 				A13545F61A6A31C0003E867A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A13545F71A6A31C0003E867A /* Build configuration list for PBXNativeTarget "ConjureTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +486,7 @@
 				A13545F91A6A31C0003E867A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
