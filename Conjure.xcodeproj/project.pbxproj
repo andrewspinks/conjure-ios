@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A127887D1A789D4000DE6606 /* HelloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127887C1A789D4000DE6606 /* HelloClient.swift */; };
 		A12788811A78A02900DE6606 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16291941A6A557F0045F4DF /* Alamofire.framework */; };
+		A12788821A78A66000DE6606 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16291931A6A557F0045F4DF /* BrightFutures.framework */; };
 		A13545DB1A6A31C0003E867A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13545DA1A6A31C0003E867A /* AppDelegate.swift */; };
 		A13545DD1A6A31C0003E867A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13545DC1A6A31C0003E867A /* ViewController.swift */; };
 		A13545E01A6A31C0003E867A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13545DE1A6A31C0003E867A /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12788821A78A66000DE6606 /* BrightFutures.framework in Frameworks */,
 				A16291961A6A557F0045F4DF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
