@@ -1,8 +1,9 @@
 language: objective-c
-
+osx_image: xcode611
 before_install:
     - brew update
     - brew install carthage
     - carthage bootstrap
+    - gem instal xcpretty
 script:
-    - xcodebuild -project Conjure.xcodeproj -scheme Conjure clean test -sdk iphonesimulator
+    - xcodebuild -project Conjure.xcodeproj -scheme Conjure clean test -sdk iphonesimulator | xcpretty
