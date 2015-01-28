@@ -6,4 +6,4 @@ before_install:
     - carthage bootstrap
     - gem instal xcpretty
 script:
-    - xcodebuild -project Conjure.xcodeproj -scheme Conjure clean test -sdk iphonesimulator | xcpretty
+    - xcodebuild -project Conjure.xcodeproj -scheme Conjure clean test -sdk iphonesimulator
