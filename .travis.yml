@@ -3,7 +3,9 @@ osx_image: xcode611
 before_install:
     - brew update
     - brew install carthage
-    - carthage bootstrap
+    - carthage bootstrap --no-build
     - gem instal xcpretty
 script:
+    - xcodebuild -workspace Carthage/Checkouts/Alamofire/Alamofire.xcworkspace -scheme 'Alamofire' build
+    - carthage build
     - xcodebuild -project Conjure.xcodeproj -scheme Conjure clean test -sdk iphonesimulator
