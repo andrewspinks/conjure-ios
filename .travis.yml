@@ -1,11 +1,13 @@
 language: objective-c
 osx_image: xcode611
 before_install:
-    - brew update
-    - brew install carthage
-    - carthage bootstrap --no-build
-    - gem instal xcpretty
+  - brew update
+  - brew install carthage
+  - scripts/keychain.sh
+  - carthage bootstrap
+  - gem instal xcpretty
 script:
-    - xcodebuild -workspace Carthage/Checkouts/Alamofire/Alamofire.xcworkspace -scheme 'Alamofire' build
-    - carthage build
-    - xcodebuild -project Conjure.xcodeproj -scheme Conjure clean test -sdk iphonesimulator
+  - xcodebuild -project Conjure.xcodeproj -scheme Conjure clean test -sdk iphonesimulator
+env:
+  global:
+    secure: HkCjOaOfEFi2vJlCGV4EZ5w1Nta8DKdMUwfbZ4FJKls31BpfCsmR2t6u0FoL3UYt3E/PajuW8Z9LP+y0BRD79ugTSKqnxVl3l/mNaU09F8DX8yI3J/xQ1O6JhV+hxOpUV20qcf69MrEqkRcnffeCjMm+1EIALK9fN7qO9qj9zG8=

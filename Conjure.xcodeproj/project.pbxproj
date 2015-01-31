@@ -10,6 +10,7 @@
 		A127887D1A789D4000DE6606 /* HelloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127887C1A789D4000DE6606 /* HelloClient.swift */; };
 		A12788811A78A02900DE6606 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16291941A6A557F0045F4DF /* Alamofire.framework */; };
 		A12788821A78A66000DE6606 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16291931A6A557F0045F4DF /* BrightFutures.framework */; };
+		A12788841A7AF3C500DE6606 /* ConjureClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12788831A7AF3C500DE6606 /* ConjureClient.swift */; };
 		A13545DB1A6A31C0003E867A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13545DA1A6A31C0003E867A /* AppDelegate.swift */; };
 		A13545DD1A6A31C0003E867A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13545DC1A6A31C0003E867A /* ViewController.swift */; };
 		A13545E01A6A31C0003E867A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13545DE1A6A31C0003E867A /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		A127887C1A789D4000DE6606 /* HelloClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloClient.swift; sourceTree = "<group>"; };
+		A12788831A7AF3C500DE6606 /* ConjureClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConjureClient.swift; sourceTree = "<group>"; };
 		A13545D51A6A31C0003E867A /* Conjure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conjure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13545D91A6A31C0003E867A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A13545DA1A6A31C0003E867A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				A13545E31A6A31C0003E867A /* LaunchScreen.xib */,
 				A13545D81A6A31C0003E867A /* Supporting Files */,
 				A127887C1A789D4000DE6606 /* HelloClient.swift */,
+				A12788831A7AF3C500DE6606 /* ConjureClient.swift */,
 			);
 			path = Conjure;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				A13545DD1A6A31C0003E867A /* ViewController.swift in Sources */,
 				A127887D1A789D4000DE6606 /* HelloClient.swift in Sources */,
 				A13545DB1A6A31C0003E867A /* AppDelegate.swift in Sources */,
+				A12788841A7AF3C500DE6606 /* ConjureClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
