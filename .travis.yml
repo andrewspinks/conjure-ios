@@ -1,13 +1,15 @@
 language: objective-c
 osx_image: xcode611
 before_install:
+- scripts/import_keychain.sh
 - brew update
 - brew install carthage
-- scripts/keychain.sh
 - carthage bootstrap
 - gem instal xcpretty
+- gem install pact-mock_service -v 0.2.3.pre.rc2
 script:
-- xcodebuild -project Conjure.xcodeproj -scheme Conjure clean test -sdk iphonesimulator
+- xcodebuild -project Conjure.xcodeproj -scheme Conjure clean test -sdk iphonesimulator CODE_SIGN_IDENTITY=
+after_script: scripts/delete_keychain.sh
 env:
   global:
   - secure: Tvgu9XRXgXRLC+XfVrru4D2WBh1XrB0YSQRyzr5HoPRPR9ohMOZaTfc2pK0AQblX3UrmuuzO3z0BqyZ8SiPvhZvKiG3iL/XWkZD22FxfsqCfV3l5YuKL6LjcY3ZH9tFwZ0VgDteX9se9MWBoYen0Zo35zwTWb1Dl44BnVdFXtmA=
