@@ -8,7 +8,8 @@ before_install:
 - gem instal xcpretty
 - gem install pact-mock_service -v 0.2.3.pre.rc2
 script:
-- xcodebuild -project Conjure.xcodeproj -scheme Conjure clean test -sdk iphonesimulator CODE_SIGN_IDENTITY=
+- set -o pipefail
+- xcodebuild -project Conjure.xcodeproj -scheme Conjure clean test -sdk iphonesimulator | xcpretty -c
 after_script: scripts/delete_keychain.sh
 env:
   global:
