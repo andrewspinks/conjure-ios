@@ -6,7 +6,7 @@ before_install:
 - brew install carthage
 - carthage bootstrap
 - gem instal xcpretty
-- gem install pact-mock_service -v 0.2.3.pre.rc2
+- gem install pact-mock_service -v 0.3.0
 script:
 - set -o pipefail
 - xcodebuild -project Conjure.xcodeproj -scheme Conjure clean test -sdk iphonesimulator | xcpretty -c

@@ -2,6 +2,9 @@ github "Thomvis/BrightFutures" "1.0.0-beta.2"
 github "Alamofire/Alamofire"
 
 #test
-github "Quick/Quick"
-github "Quick/Nimble"
-github "DiUS/pact-consumer-swift"
+github "Quick/Quick" "swift-1.1"
+github "Quick/Nimble" "swift-1.1"
+github "DiUS/pact-consumer-swift" "master"
+
+
+
