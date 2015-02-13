@@ -22,8 +22,11 @@
 		A1EE17EA1A8D9ED6008B0E8C /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE17E81A8D9ED6008B0E8C /* QuestionViewController.swift */; };
 		A1EE17EB1A8D9ED6008B0E8C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE17E91A8D9ED6008B0E8C /* MainViewController.swift */; };
 		A1EE17F01A8D9EF9008B0E8C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE17EC1A8D9EF9008B0E8C /* MainViewController.xib */; };
-		A1EE17F11A8D9EF9008B0E8C /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE17ED1A8D9EF9008B0E8C /* QuestionViewController.xib */; };
 		A1EE17F21A8D9EF9008B0E8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE17EE1A8D9EF9008B0E8C /* LaunchScreen.xib */; };
+		A1EE17F41A8DB178008B0E8C /* QuestionAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE17F31A8DB178008B0E8C /* QuestionAnswerView.swift */; };
+		A1EE17F61A8DB1D9008B0E8C /* QuestionAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE17F51A8DB1D9008B0E8C /* QuestionAnswerView.xib */; };
+		A1EE17FA1A8DD3DB008B0E8C /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE17F91A8DD3DB008B0E8C /* QuestionViewController.xib */; };
+		A1EE17FC1A8DD810008B0E8C /* WrongAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE17FB1A8DD810008B0E8C /* WrongAnswerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +57,11 @@
 		A1EE17E81A8D9ED6008B0E8C /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionViewController.swift; path = Controllers/QuestionViewController.swift; sourceTree = "<group>"; };
 		A1EE17E91A8D9ED6008B0E8C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
 		A1EE17EC1A8D9EF9008B0E8C /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = Views/MainViewController.xib; sourceTree = "<group>"; };
-		A1EE17ED1A8D9EF9008B0E8C /* QuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionViewController.xib; path = Views/QuestionViewController.xib; sourceTree = "<group>"; };
 		A1EE17EF1A8D9EF9008B0E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A1EE17F31A8DB178008B0E8C /* QuestionAnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionAnswerView.swift; path = Views/QuestionAnswerView.swift; sourceTree = "<group>"; };
+		A1EE17F51A8DB1D9008B0E8C /* QuestionAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionAnswerView.xib; path = Views/QuestionAnswerView.xib; sourceTree = "<group>"; };
+		A1EE17F91A8DD3DB008B0E8C /* QuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionViewController.xib; path = Views/QuestionViewController.xib; sourceTree = "<group>"; };
+		A1EE17FB1A8DD810008B0E8C /* WrongAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WrongAnswerView.xib; path = Views/WrongAnswerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +92,12 @@
 		A12038FE1A8C92B700D71C60 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A1EE17F91A8DD3DB008B0E8C /* QuestionViewController.xib */,
+				A1EE17F31A8DB178008B0E8C /* QuestionAnswerView.swift */,
 				A1EE17EC1A8D9EF9008B0E8C /* MainViewController.xib */,
-				A1EE17ED1A8D9EF9008B0E8C /* QuestionViewController.xib */,
 				A1EE17EE1A8D9EF9008B0E8C /* LaunchScreen.xib */,
+				A1EE17F51A8DB1D9008B0E8C /* QuestionAnswerView.xib */,
+				A1EE17FB1A8DD810008B0E8C /* WrongAnswerView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -254,10 +263,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EE17F61A8DB1D9008B0E8C /* QuestionAnswerView.xib in Resources */,
 				A1EE17F21A8D9EF9008B0E8C /* LaunchScreen.xib in Resources */,
 				A13545E21A6A31C0003E867A /* Images.xcassets in Resources */,
 				A1EE17F01A8D9EF9008B0E8C /* MainViewController.xib in Resources */,
-				A1EE17F11A8D9EF9008B0E8C /* QuestionViewController.xib in Resources */,
+				A1EE17FC1A8DD810008B0E8C /* WrongAnswerView.xib in Resources */,
+				A1EE17FA1A8DD3DB008B0E8C /* QuestionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +326,7 @@
 				A1EE17E71A8D9EC4008B0E8C /* HelloClient.swift in Sources */,
 				A1EE17EA1A8D9ED6008B0E8C /* QuestionViewController.swift in Sources */,
 				A1EE17E61A8D9EC4008B0E8C /* ConjureClient.swift in Sources */,
+				A1EE17F41A8DB178008B0E8C /* QuestionAnswerView.swift in Sources */,
 				A1EE17EB1A8D9ED6008B0E8C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
