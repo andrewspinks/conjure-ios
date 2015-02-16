@@ -30,6 +30,9 @@
 		A1EE17FE1A8F5F40008B0E8C /* CorrectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE17FD1A8F5F40008B0E8C /* CorrectionView.swift */; };
 		A1EE18001A91ABAD008B0E8C /* Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EE17FF1A91ABAD008B0E8C /* Snap.framework */; };
 		A1EE18031A91B094008B0E8C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE18021A91B094008B0E8C /* Question.swift */; };
+		A1EE18071A9215CF008B0E8C /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE18061A9215CF008B0E8C /* SummaryView.swift */; };
+		A1EE18091A9215E9008B0E8C /* SummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE18081A9215E9008B0E8C /* SummaryView.xib */; };
+		A1EE180B1A921614008B0E8C /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE180A1A921614008B0E8C /* BindingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		A1EE17FD1A8F5F40008B0E8C /* CorrectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CorrectionView.swift; path = Views/CorrectionView.swift; sourceTree = "<group>"; };
 		A1EE17FF1A91ABAD008B0E8C /* Snap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Snap.framework; path = Carthage/Build/iOS/Snap.framework; sourceTree = "<group>"; };
 		A1EE18021A91B094008B0E8C /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = Models/Question.swift; sourceTree = "<group>"; };
+		A1EE18061A9215CF008B0E8C /* SummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SummaryView.swift; path = Views/SummaryView.swift; sourceTree = "<group>"; };
+		A1EE18081A9215E9008B0E8C /* SummaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SummaryView.xib; path = Views/SummaryView.xib; sourceTree = "<group>"; };
+		A1EE180A1A921614008B0E8C /* BindingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BindingView.swift; path = Views/BindingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,16 @@
 		A12038FE1A8C92B700D71C60 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A1EE180A1A921614008B0E8C /* BindingView.swift */,
 				A1EE17FD1A8F5F40008B0E8C /* CorrectionView.swift */,
 				A1EE17F31A8DB178008B0E8C /* QuestionAnswerView.swift */,
+				A1EE18061A9215CF008B0E8C /* SummaryView.swift */,
 				A1EE17F91A8DD3DB008B0E8C /* QuestionViewController.xib */,
 				A1EE17EC1A8D9EF9008B0E8C /* MainViewController.xib */,
 				A1EE17EE1A8D9EF9008B0E8C /* LaunchScreen.xib */,
 				A1EE17F51A8DB1D9008B0E8C /* QuestionAnswerView.xib */,
 				A1EE17FB1A8DD810008B0E8C /* CorrectionView.xib */,
+				A1EE18081A9215E9008B0E8C /* SummaryView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -287,6 +296,7 @@
 				A13545E21A6A31C0003E867A /* Images.xcassets in Resources */,
 				A1EE17F01A8D9EF9008B0E8C /* MainViewController.xib in Resources */,
 				A1EE17FC1A8DD810008B0E8C /* CorrectionView.xib in Resources */,
+				A1EE18091A9215E9008B0E8C /* SummaryView.xib in Resources */,
 				A1EE17FA1A8DD3DB008B0E8C /* QuestionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,11 +354,13 @@
 			files = (
 				A1EE17FE1A8F5F40008B0E8C /* CorrectionView.swift in Sources */,
 				A1EE18031A91B094008B0E8C /* Question.swift in Sources */,
+				A1EE180B1A921614008B0E8C /* BindingView.swift in Sources */,
 				A13545DB1A6A31C0003E867A /* AppDelegate.swift in Sources */,
 				A1EE17E71A8D9EC4008B0E8C /* HelloClient.swift in Sources */,
 				A1EE17EA1A8D9ED6008B0E8C /* QuestionViewController.swift in Sources */,
 				A1EE17E61A8D9EC4008B0E8C /* ConjureClient.swift in Sources */,
 				A1EE17F41A8DB178008B0E8C /* QuestionAnswerView.swift in Sources */,
+				A1EE18071A9215CF008B0E8C /* SummaryView.swift in Sources */,
 				A1EE17EB1A8D9ED6008B0E8C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

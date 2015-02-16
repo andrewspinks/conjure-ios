@@ -3,24 +3,15 @@
 import UIKit
 
 @objc(QuestionAnswerView)
-class QuestionAnswerView: UIView, UITextFieldDelegate {
+class QuestionAnswerView: BindingView, UITextFieldDelegate {
   
-  @IBOutlet weak var subview: UIView!
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var descriptionTextView: UITextView!
   @IBOutlet weak var answerTextField: UITextField!
   weak var delegate: Answereable?
-
-  init(frame: CGRect, delegate: Answereable) {
-    super.init(frame: frame)
-    var subviewArray = NSBundle.mainBundle().loadNibNamed("QuestionAnswerView", owner:self, options:nil)
-    subview = subviewArray[0] as? UIView
- 
-    self.addSubview(self.subview)
-    self.setTranslatesAutoresizingMaskIntoConstraints(false)
-    self.subview.setTranslatesAutoresizingMaskIntoConstraints(false)
-    self.subview.setNeedsLayout()
-    
+  
+  init(delegate: Answereable) {
+    super.init(nib: "QuestionAnswerView")
     self.delegate = delegate
     self.answerTextField.becomeFirstResponder()
     self.answerTextField.delegate = self
@@ -28,21 +19,6 @@ class QuestionAnswerView: UIView, UITextFieldDelegate {
   
   required init(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-  }
-  
-  override func updateConstraints() {
-    super.updateConstraints()
-    
-    if let subview = subview {
-      self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[subview]|",
-        options:.AlignAllLeft,
-        metrics:nil,
-        views:["subview": subview]))
-      self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[subview]|",
-        options:.AlignAllLeft,
-        metrics:nil,
-        views:["subview": subview]))
-    }
   }
 
   internal func show(question: Question) {

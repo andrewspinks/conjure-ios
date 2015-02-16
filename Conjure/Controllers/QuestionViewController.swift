@@ -38,7 +38,7 @@ class QuestionViewController: UIViewController, Answereable {
     if contains(validAnswers, answer) {
       self.nextQuestion()
     } else {
-      var view = CorrectionView(frame: actionView.frame, delegate: self)
+      var view = CorrectionView(delegate: self)
       view.show(question(), answer: answer)
       self.switchView(view)
     }
@@ -47,7 +47,12 @@ class QuestionViewController: UIViewController, Answereable {
   func nextQuestion() {
     self.questionIndex++
     self.progressBar.setProgress(Float(self.questionIndex) / Float(self.questions.count), animated: true)
-    self.switchView(newQuestion())
+    
+    if self.questionIndex < self.questions.count {
+      self.switchView(newQuestion())
+    } else {
+      switchView(SummaryView())
+    }
   }
 
   func close() -> Void {
@@ -55,7 +60,7 @@ class QuestionViewController: UIViewController, Answereable {
   }
 
   private func newQuestion() -> UIView {
-    var questionView = QuestionAnswerView(frame: actionView.frame, delegate: self)
+    var questionView = QuestionAnswerView(delegate: self)
     questionView.show(question())
     return questionView
   }
