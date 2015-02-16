@@ -26,7 +26,10 @@
 		A1EE17F41A8DB178008B0E8C /* QuestionAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE17F31A8DB178008B0E8C /* QuestionAnswerView.swift */; };
 		A1EE17F61A8DB1D9008B0E8C /* QuestionAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE17F51A8DB1D9008B0E8C /* QuestionAnswerView.xib */; };
 		A1EE17FA1A8DD3DB008B0E8C /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE17F91A8DD3DB008B0E8C /* QuestionViewController.xib */; };
-		A1EE17FC1A8DD810008B0E8C /* WrongAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE17FB1A8DD810008B0E8C /* WrongAnswerView.xib */; };
+		A1EE17FC1A8DD810008B0E8C /* CorrectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE17FB1A8DD810008B0E8C /* CorrectionView.xib */; };
+		A1EE17FE1A8F5F40008B0E8C /* CorrectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE17FD1A8F5F40008B0E8C /* CorrectionView.swift */; };
+		A1EE18001A91ABAD008B0E8C /* Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EE17FF1A91ABAD008B0E8C /* Snap.framework */; };
+		A1EE18031A91B094008B0E8C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE18021A91B094008B0E8C /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +64,10 @@
 		A1EE17F31A8DB178008B0E8C /* QuestionAnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionAnswerView.swift; path = Views/QuestionAnswerView.swift; sourceTree = "<group>"; };
 		A1EE17F51A8DB1D9008B0E8C /* QuestionAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionAnswerView.xib; path = Views/QuestionAnswerView.xib; sourceTree = "<group>"; };
 		A1EE17F91A8DD3DB008B0E8C /* QuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionViewController.xib; path = Views/QuestionViewController.xib; sourceTree = "<group>"; };
-		A1EE17FB1A8DD810008B0E8C /* WrongAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WrongAnswerView.xib; path = Views/WrongAnswerView.xib; sourceTree = "<group>"; };
+		A1EE17FB1A8DD810008B0E8C /* CorrectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CorrectionView.xib; path = Views/CorrectionView.xib; sourceTree = "<group>"; };
+		A1EE17FD1A8F5F40008B0E8C /* CorrectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CorrectionView.swift; path = Views/CorrectionView.swift; sourceTree = "<group>"; };
+		A1EE17FF1A91ABAD008B0E8C /* Snap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Snap.framework; path = Carthage/Build/iOS/Snap.framework; sourceTree = "<group>"; };
+		A1EE18021A91B094008B0E8C /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = Models/Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EE18001A91ABAD008B0E8C /* Snap.framework in Frameworks */,
 				A12788821A78A66000DE6606 /* BrightFutures.framework in Frameworks */,
 				A16291961A6A557F0045F4DF /* Alamofire.framework in Frameworks */,
 			);
@@ -92,12 +99,13 @@
 		A12038FE1A8C92B700D71C60 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A1EE17F91A8DD3DB008B0E8C /* QuestionViewController.xib */,
+				A1EE17FD1A8F5F40008B0E8C /* CorrectionView.swift */,
 				A1EE17F31A8DB178008B0E8C /* QuestionAnswerView.swift */,
+				A1EE17F91A8DD3DB008B0E8C /* QuestionViewController.xib */,
 				A1EE17EC1A8D9EF9008B0E8C /* MainViewController.xib */,
 				A1EE17EE1A8D9EF9008B0E8C /* LaunchScreen.xib */,
 				A1EE17F51A8DB1D9008B0E8C /* QuestionAnswerView.xib */,
-				A1EE17FB1A8DD810008B0E8C /* WrongAnswerView.xib */,
+				A1EE17FB1A8DD810008B0E8C /* CorrectionView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 		A13545CC1A6A31C0003E867A = {
 			isa = PBXGroup;
 			children = (
+				A1EE17FF1A91ABAD008B0E8C /* Snap.framework */,
 				A16291971A6A55A80045F4DF /* PactConsumerSwift.framework */,
 				A16291981A6A55A80045F4DF /* Quick.framework */,
 				A16291991A6A55A80045F4DF /* Nimble.framework */,
@@ -146,6 +155,7 @@
 		A13545D71A6A31C0003E867A /* Conjure */ = {
 			isa = PBXGroup;
 			children = (
+				A1EE18011A91B079008B0E8C /* Models */,
 				A12039001A8C92DB00D71C60 /* Clients */,
 				A12038FF1A8C92CD00D71C60 /* Controllers */,
 				A12038FE1A8C92B700D71C60 /* Views */,
@@ -179,6 +189,14 @@
 				A13545EF1A6A31C0003E867A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1EE18011A91B079008B0E8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1EE18021A91B094008B0E8C /* Question.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +250,7 @@
 				TargetAttributes = {
 					A13545D41A6A31C0003E867A = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = HR4LVL7TKY;
 					};
 					A13545E91A6A31C0003E867A = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -267,7 +286,7 @@
 				A1EE17F21A8D9EF9008B0E8C /* LaunchScreen.xib in Resources */,
 				A13545E21A6A31C0003E867A /* Images.xcassets in Resources */,
 				A1EE17F01A8D9EF9008B0E8C /* MainViewController.xib in Resources */,
-				A1EE17FC1A8DD810008B0E8C /* WrongAnswerView.xib in Resources */,
+				A1EE17FC1A8DD810008B0E8C /* CorrectionView.xib in Resources */,
 				A1EE17FA1A8DD3DB008B0E8C /* QuestionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +309,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Snap.framework",
 			);
 			outputPaths = (
 			);
@@ -322,6 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EE17FE1A8F5F40008B0E8C /* CorrectionView.swift in Sources */,
+				A1EE18031A91B094008B0E8C /* Question.swift in Sources */,
 				A13545DB1A6A31C0003E867A /* AppDelegate.swift in Sources */,
 				A1EE17E71A8D9EC4008B0E8C /* HelloClient.swift in Sources */,
 				A1EE17EA1A8D9ED6008B0E8C /* QuestionViewController.swift in Sources */,
@@ -444,6 +466,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -451,6 +475,7 @@
 				INFOPLIST_FILE = Conjure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -458,6 +483,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -465,6 +492,7 @@
 				INFOPLIST_FILE = Conjure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

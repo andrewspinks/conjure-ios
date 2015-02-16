@@ -1,5 +1,6 @@
 github "Thomvis/BrightFutures" "1.0.0-beta.2"
 github "Alamofire/Alamofire"
+github "Masonry/Snap"
 
 #test
 github "Quick/Quick" "swift-1.1"
