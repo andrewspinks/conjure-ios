@@ -3,6 +3,8 @@ import UIKit
 
 @objc(SummaryView)
 class SummaryView: BindingView {
+  @IBOutlet weak var numberAnsweredLabel: UILabel!
+  @IBOutlet weak var numberCorrectLabel: UILabel!
   
   init() {
     super.init(nib: "SummaryView")
@@ -12,4 +14,7 @@ class SummaryView: BindingView {
     super.init(coder: aDecoder)
   }
 
+  @IBAction func showErrors(source: UIButton) -> Void {
+    
+  }
 }

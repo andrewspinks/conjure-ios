@@ -1,9 +1,9 @@
 
-struct Question {
-  let title: String
-  let kanji: String
-  let kana :String
-  let definition :String
-  let answer: String
-  let alternatives: [String]
+public struct Question {
+  public let title: String
+  public let kanji: String
+  public let kana :String
+  public let definition :String
+  public let answer: String
+  public let alternatives: [String]
 }

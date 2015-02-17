@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DC1801BD1B98194677CED7A /* ConjureClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18211161032D19A32C9E8 /* ConjureClientSpec.swift */; };
 		A12038FB1A8C8BDE00D71C60 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16291931A6A557F0045F4DF /* BrightFutures.framework */; };
 		A12788811A78A02900DE6606 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16291941A6A557F0045F4DF /* Alamofire.framework */; };
 		A12788821A78A66000DE6606 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16291931A6A557F0045F4DF /* BrightFutures.framework */; };
@@ -33,6 +34,7 @@
 		A1EE18071A9215CF008B0E8C /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE18061A9215CF008B0E8C /* SummaryView.swift */; };
 		A1EE18091A9215E9008B0E8C /* SummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE18081A9215E9008B0E8C /* SummaryView.xib */; };
 		A1EE180B1A921614008B0E8C /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE180A1A921614008B0E8C /* BindingView.swift */; };
+		A1EE180C1A92E6D2008B0E8C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE18021A91B094008B0E8C /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DC18211161032D19A32C9E8 /* ConjureClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConjureClientSpec.swift; sourceTree = "<group>"; };
 		A13545D51A6A31C0003E867A /* Conjure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conjure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13545D91A6A31C0003E867A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A13545DA1A6A31C0003E867A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +191,7 @@
 			children = (
 				A13545F01A6A31C0003E867A /* ConjureTests.swift */,
 				A13545EE1A6A31C0003E867A /* Supporting Files */,
+				2DC18211161032D19A32C9E8 /* ConjureClientSpec.swift */,
 			);
 			path = ConjureTests;
 			sourceTree = "<group>";
@@ -369,7 +373,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EE180C1A92E6D2008B0E8C /* Question.swift in Sources */,
 				A13545F11A6A31C0003E867A /* ConjureTests.swift in Sources */,
+				2DC1801BD1B98194677CED7A /* ConjureClientSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

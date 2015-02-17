@@ -13,7 +13,6 @@ class QuestionViewController: UIViewController, Answereable {
   var currentView: UIView?
   var constrains: [AnyObject] = []
   var questions: [Question] = []
-
   var questionIndex: Int = 0
   
   override func viewDidLoad() {
